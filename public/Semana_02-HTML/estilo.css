@@ -1,0 +1,11 @@
+h1{
+    color: blue;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+}
