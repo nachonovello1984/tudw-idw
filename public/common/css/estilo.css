@@ -43,8 +43,8 @@ main h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main li {
-    margin-bottom: 0.5rem;
+main ul{
+    margin-left: 2.5rem;
 }
 
 main p,
@@ -55,18 +55,39 @@ main li a {
 
 main p,
 main li {
+    margin-bottom: 0.5rem;
     color: #0B1623
 }
 
-main li,
+main li {
+    color: #1976D2;
+}
+
 main li a,
 main li a:hover,
 main li a:active,
 main li a:focus,
 main li a:visited {
+    position: relative;
+    display: inline-block;
     color: #1976D2;
 }
 
-main li a:hover {
-    border-bottom: 2px solid #FBC02D;
+main li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Grosor del subrayado */
+    background-color: #FBC02D;
+    /* Color del subrayado */
+    transition: width 0.5s ease;
+    /* Duración y función de la transición */
+}
+
+main li a:hover::before {
+    width: 100%;
+    /* Ancho completo */
 }
