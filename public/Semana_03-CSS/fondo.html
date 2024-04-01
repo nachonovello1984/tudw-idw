@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CSS - Fondos</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css" media="screen">
+            body{
+                margin: 0 auto;
+
+                width: 80%;
+                min-width: 960px;
+            }
+
+            .contenedor{
+                float: left;
+
+                margin: 20px;
+
+                width: 200px;
+                height: 200px;
+
+                border: 5px solid black;
+            }
+
+            .contenedor1{
+                background-color: #1E69DE;
+            }
+
+            .contenedor2{
+                background: #6db3f2; /* Old browsers */
+                background: -moz-linear-gradient(top,  #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6db3f2), color-stop(50%,#54a3ee), color-stop(51%,#3690f0), color-stop(100%,#1e69de)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+            }
+
+            .contenedor3{
+                background-color: white;
+                background-image: url('img/mario.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .contenedor4{
+                background-color: white;
+                background-image: url('img/mario.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 80%;
+            }
+
+            .contenedor5{
+                background-color: white;
+                background-image: url('img/mario.jpg');
+                background-repeat: repeat;
+                background-size: 20%;
+            }
+            
+            ul{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor contenedor1"></div>
+        <div class="contenedor contenedor2"></div>
+        <div class="contenedor contenedor3"></div>
+        <div class="contenedor contenedor4"></div>
+        <div class="contenedor contenedor5"></div>
+
+        <ul>
+            <li><a href="index.html">Volver al inicio.</a></li>
+        </ul>
+    </body>
+</html>

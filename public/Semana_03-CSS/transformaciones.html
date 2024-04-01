@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CSS - Transformaciones</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css" media="screen">
+            div.contenedor{
+                margin: 0 auto;
+
+                width: 300px;
+                height: 300px;
+
+                background-color: yellow;
+
+                border: 5px solid black;
+            }
+
+            div.traslacion{
+                background-color: red;
+
+                -ms-transform: translate(50px,100px); /* IE 9 */
+                -webkit-transform: translate(50px,100px); /* Safari */
+                transform: translate(50px,100px); /* Standard syntax */
+            }
+
+            div.rotacion{
+                background-color: blue;
+
+                -ms-transform: rotate(-20deg); /* IE 9 */
+                -webkit-transform: rotate(-20deg); /* Safari */
+                transform: rotate(-20deg); /* Standard syntax */
+            }
+
+            div.skew{
+                background-color: green;
+                -ms-transform: skewX(20deg); /* IE 9 */
+                -webkit-transform: skewX(20deg); /* Safari */
+                transform: skewX(20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor traslacion"></div>
+
+        <div class="contenedor rotacion"></div>
+        
+        <div class="contenedor skew"></div>
+    </body>
+</html>

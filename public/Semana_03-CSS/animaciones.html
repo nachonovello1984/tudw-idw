@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CSS - Animaciones</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css" media="screen">
+            div.animacion {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                -webkit-animation-name: animacionTest; /* Chrome, Safari, Opera */
+                -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+                animation-name: animacionTest;
+                animation-duration: 4s;
+            }
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes animacionTest {
+                0%   {background-color: red;}
+                25%  {background-color: yellow;}
+                50%  {background-color: blue;}
+                100% {background-color: green;}
+            }
+
+            /* Standard syntax */
+            @keyframes animacionTest {
+                0%   {background-color: red;}
+                25%  {background-color: yellow;}
+                50%  {background-color: blue;}
+                100% {background-color: green;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animacion"></div>
+    </body>
+</html>

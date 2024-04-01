@@ -1,0 +1,15 @@
+h1{
+    color: darkblue;
+}
+
+p{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 2.2;
+}
+
+a, a:link, a:active, a:visited, a:hover{
+    color: blue;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}

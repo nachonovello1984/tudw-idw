@@ -1,0 +1,67 @@
+ol {
+    margin-left: 40px;
+}
+
+li {
+    padding-left: 30px;
+    font-size: 24px;
+}
+
+li.coloresUno {
+    color: blue;
+}
+
+li.coloresDos {
+    color: rgb(255, 0, 0);
+}
+
+li.coloresTres {
+    color: hsl(167, 100%, 50%);
+}
+
+li.coloresCuatro {
+    color: #FF00FF;
+}
+
+li.coloresCinco {
+    color: rgba(128, 50, 100, 0.8);
+}
+
+li.textosUno {
+    font-family: Arial, sans-serif;
+}
+
+li.textosDos {
+    font-family: 'Times New Roman', serif;
+}
+
+li.textosTres {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+li.textosCuatro {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+p.testWordWrap {
+    display: block;
+    width: 50px;
+    font-size: 12pt;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+
+/*
+@font-face{
+    font-family: 'FontAwesome';
+    src: url('../font/fontawesome-webfont.eot') format('embedded-opentype'),
+         url('../font/fontawesome-webfont.woff') format('woff'),
+         url('../font/fontawesome-webfont.ttf') format('truetype'),
+         url('../font/fontawesome-webfont.svg') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+*/

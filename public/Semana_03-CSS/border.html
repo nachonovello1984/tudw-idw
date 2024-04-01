@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>CSS - Bordes</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style type="text/css" media="screen">
+            div.borde1{
+                margin: 20px auto;
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                border: 5px solid black;
+            }
+            div.borde2{
+                margin: 20px auto;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 5px dotted black;
+            }
+            div.borderRadius{
+                margin: 20px auto;
+                width: 100px;
+                height: 100px;
+                background-color: violet;
+                border-radius: 50%;
+            }
+            div.borderImage{
+                border: 10px solid transparent;
+                padding: 15px;
+                -webkit-border-image: url('img/border.png') 30 round; /* Safari 3.1-5 */
+                -o-border-image: url('img/border.png') 30 round; /* Opera 11-12.1 */
+                border-image: url('img/border.png') 30 round;
+            }
+        </style>
+    </head>
+    <body>  
+        <div class="borde1">
+        </div>
+        <div class="borde2">
+        </div>
+        <div class="borderRadius">
+        </div>
+        <div class="borderImage">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu cursus nibh, et aliquam leo. Vivamus eget leo ut justo finibus luctus at quis arcu. Nunc eu pharetra turpis, sit amet volutpat nulla. Nulla et odio sit amet nunc maximus elementum ut porta massa. Aliquam in lectus lorem. Sed id metus at metus sollicitudin convallis eu maximus nunc. Aliquam imperdiet, magna et fermentum eleifend, purus velit sollicitudin nibh, rhoncus molestie urna mauris eu dolor. Aliquam eu velit urna. Curabitur velit eros, sodales feugiat nisl eget, aliquet euismod nunc.
+        </div>
+    </body>
+</html>

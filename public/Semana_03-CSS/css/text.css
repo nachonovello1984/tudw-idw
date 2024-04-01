@@ -1,0 +1,31 @@
+h1, h2{
+    color: #CCC;
+    text-shadow: 2px 2px 3px #000;
+}
+
+p.letterSpacing{
+    letter-spacing: 5px;
+}
+
+p.wordSpacing{
+    word-spacing: 10px;
+}
+
+p.textAlign{
+    text-align: left;
+/*    
+    text-align: center;
+    text-align: right;
+    text-align: justify;
+*/
+}
+
+p.textDecoration{
+    text-decoration: underline;  /*overline; */
+} 
+
+p.textIndent{
+    text-indent: 100px;
+}
+
+
