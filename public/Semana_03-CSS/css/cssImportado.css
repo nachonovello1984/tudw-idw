@@ -1,15 +1,43 @@
-h1{
+h1 {
     color: darkblue;
 }
 
-p{
+body {
+    background-color: rgb(182, 227, 255);
+}
+
+p {
     width: 100%;
     font-family: Arial, sans-serif;
     line-height: 2.2;
 }
 
-a, a:link, a:active, a:visited, a:hover{
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
     color: blue;
     font-family: Arial, sans-serif;
     text-decoration: none;
+}
+
+p.azul {
+    color: blue;
+}
+
+p.turquesa {
+    color: teal
+}
+
+p.naranja {
+    color: orange
+}
+
+div#cuadradoVerde{
+    width: 200px;
+    height: 200px;
+
+    background-color:darkgreen;
+    border: 2px solid black;
 }
