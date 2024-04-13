@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>HTML y CSS: Flexbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+        body {
+            background-color: lightgray;
+        }
+
+        div.flexContainer {
+            /*direction: rtl;*/
+            /*Si altero la dirección se altera el orden de los items}*/
+
+            display: flex;
+
+            /*si pongo row se ordenan en filas. column en columnas*/
+            /*flex-direction: row;*/
+
+            /* center; space-around; space-between;  flex-end; flex-start; */
+            justify-content: flex-start;
+            
+            /* center; flex-end; /* flex-start; stretch; */
+            align-items: stretch;
+
+            /* wrap; no-wrap;*/
+            flex-wrap: no-wrap;
+
+            margin: 0 auto;
+            padding: 10px;
+
+            width: 80%;
+            min-width: 1000px;
+
+            height: 500px;
+
+            background-color: #666;
+
+            border: 5px solid black;
+
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+        div.flexItem {
+            margin: 10px;
+
+            width: 100px;
+            height: 100px;
+
+            font-family: Arial, sans-serif;
+            text-align: center;
+
+            background-color: #6AD2D1;
+
+            -webkit-box-shadow: 2px 2px 5px black;
+            box-shadow: 2px 2px 5px black;
+
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+        }
+
+        .primero {
+            /*order: -1;*/
+
+            /*align-self: flex-end;*/
+
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexContainer">
+        <div class="flexItem">Item 1</div>
+
+        <div class="flexItem">Item 2</div>
+
+        <div class="flexItem">Item 3</div>
+
+        <div class="flexItem">
+            Item 4
+        </div>
+
+        <div class="flexItem">
+            Item 5
+        </div>
+
+        <div class="flexItem primero">
+            Item 6
+        </div>
+
+    </div>
+    <h3>Opciones</h3>
+    <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+    </ul>
+</body>
+
+</html>

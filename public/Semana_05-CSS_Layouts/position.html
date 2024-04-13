@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>HTML y CSS: Position</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+        div.contenedor {
+            padding: 5px;
+
+            width: 200px;
+            height: 200px;
+
+            text-align: justify;
+
+            border: 5px solid black;
+
+            overflow: hidden;
+        }
+
+        div.contenedorAzul {
+            position: static;
+
+            background-color: blue;
+        }
+
+        div.contenedorRojo {
+            position: relative;
+
+            right: -800px;
+
+            background-color: red;
+        }
+
+        div.contenedorVerde {
+            position: absolute;
+
+            top: 1000px;
+            right: 10px;
+
+            background-color: green;
+        }
+
+        div.contenedorFixed {
+            position: fixed;
+
+            top: 10px;
+            right: 10px;
+
+            background-color: #1A1A1A;
+            background-image: url('img/follow.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor contenedorAzul">
+    </div>
+
+    <div class="contenedor contenedorRojo">
+    </div>
+
+    <div class="contenedor contenedorVerde">
+    </div>
+
+    <div class="contenedor contenedorFixed">
+    </div>
+    <h3>Opciones</h3>
+    <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+    </ul>
+</body>
+
+</html>

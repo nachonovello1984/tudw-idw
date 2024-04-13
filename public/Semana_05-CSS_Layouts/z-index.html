@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>HTML y CSS: Position</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+        div.contenedor {
+            position: absolute;
+
+            padding: 5px;
+
+            width: 200px;
+            height: 200px;
+
+            text-align: justify;
+
+            border: 5px solid black;
+
+            overflow: hidden;
+        }
+
+        div.contenedorAzul {
+            top: 10px;
+            left: 10px;
+
+            background-color: blue;
+        }
+
+        div.contenedorRojo {
+            top: 50px;
+            left: 50px;
+
+            background-color: red;
+        }
+
+        div.contenedorVerde {
+            top: 90px;
+            left: 90px;
+
+            background-color: green;
+            z-index: 1;
+        }
+
+        div.contenedorAmarillo {
+            top: 130px;
+            left: 130px;
+
+            background-color: yellow;
+            z-index: 0
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor contenedorAzul">
+    </div>
+
+    <div class="contenedor contenedorRojo">
+    </div>
+
+    <div class="contenedor contenedorVerde">
+    </div>
+
+    <div class="contenedor contenedorAmarillo">
+    </div>
+
+    <h3>Opciones</h3>
+    <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+    </ul>
+</body>
+
+</html>

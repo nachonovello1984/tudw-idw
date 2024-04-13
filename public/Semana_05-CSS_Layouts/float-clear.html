@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>HTML y CSS: Position</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+        div.contenedorFila {
+            margin: 10px 5px;
+
+            padding: 10px;
+
+            border: 5px solid black;
+
+            overflow: auto;
+        }
+
+        div.contenedorFila div {
+            margin: 0px 5px;
+
+            padding: 5px;
+
+            width: 150px;
+            height: 150px;
+
+            border: 5px solid black;
+        }
+
+        div.floatLeft div {
+            float: left;
+        }
+
+        div.floatRight div {
+            float: right;
+        }
+
+        div.contenedorAzul {
+            background-color: blue;
+        }
+
+        div.contenedorRojo {
+            background-color: red;
+        }
+
+        div.contenedorVerde {
+            background-color: green;
+        }
+
+        div.contenedorAmarillo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float y Clear</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum lectus nisi, sit amet finibus quam
+        imperdiet ullamcorper. Quisque orci est, pretium id urna in, elementum molestie tortor. Maecenas id dolor in
+        enim cursus mattis. Etiam sit amet pulvinar ligula. Mauris eu justo et enim condimentum commodo. Ut elementum
+        ornare nunc at tincidunt. Phasellus volutpat dolor nec ex tristique posuere. Duis quis rhoncus nisl. Donec
+        malesuada iaculis mi, sed viverra odio volutpat non. Vivamus quis suscipit erat. Proin fermentum sed mi sit amet
+        eleifend. Aliquam massa nibh, congue sit amet mi eget, consectetur consectetur ipsum. Maecenas efficitur justo
+        rhoncus turpis tempus, nec bibendum est ultrices. Aliquam luctus ante nec maximus posuere. Fusce suscipit, elit
+        vitae scelerisque lacinia, leo urna varius justo, id lobortis nisl metus sit amet velit. Integer vel cursus
+        sapien.
+        <img src="img/monalisa.jpg" style="float: left; margin: 20px; " />
+        Phasellus et faucibus magna, sed lacinia leo. Aliquam blandit felis a ipsum gravida, quis consectetur tellus
+        consequat. Pellentesque fermentum a neque a tincidunt. Sed ut velit turpis. Praesent porta pellentesque aliquam.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id purus
+        tristique, pulvinar ligula vitae, vestibulum risus. Nullam hendrerit nunc sit amet ornare tempor. Sed massa
+        nunc, mollis vel odio eu, pellentesque luctus purus. Praesent bibendum sapien vehicula arcu sollicitudin
+        ullamcorper. Sed ut sapien nulla. In a condimentum nunc, a maximus est.
+    </p>
+
+    <div style="clear: both;">
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum lectus nisi, sit amet finibus quam
+        imperdiet ullamcorper. Quisque orci est, pretium id urna in, elementum molestie tortor. Maecenas id dolor in
+        enim cursus mattis. Etiam sit amet pulvinar ligula. Mauris eu justo et enim condimentum commodo. Ut elementum
+        ornare nunc at tincidunt. Phasellus volutpat dolor nec ex tristique posuere. Duis quis rhoncus nisl. Donec
+        malesuada iaculis mi, sed viverra odio volutpat non. Vivamus quis suscipit erat. Proin fermentum sed mi sit amet
+        eleifend. Aliquam massa nibh, congue sit amet mi eget, consectetur consectetur ipsum. Maecenas efficitur justo
+        rhoncus turpis tempus, nec bibendum est ultrices. Aliquam luctus ante nec maximus posuere. Fusce suscipit, elit
+        vitae scelerisque lacinia, leo urna varius justo, id lobortis nisl metus sit amet velit. Integer vel cursus
+        sapien.
+        <img src="img/monalisa.jpg" style="float: right; margin: 20px; " />
+        Phasellus et faucibus magna, sed lacinia leo. Aliquam blandit felis a ipsum gravida, quis consectetur tellus
+        consequat. Pellentesque fermentum a neque a tincidunt. Sed ut velit turpis. Praesent porta pellentesque aliquam.
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id purus
+        tristique, pulvinar ligula vitae, vestibulum risus. Nullam hendrerit nunc sit amet ornare tempor. Sed massa
+        nunc, mollis vel odio eu, pellentesque luctus purus. Praesent bibendum sapien vehicula arcu sollicitudin
+        ullamcorper. Sed ut sapien nulla. In a condimentum nunc, a maximus est.
+    </p>
+
+    <div style="clear: both;">
+    </div>
+
+    <div class="contenedorFila floatLeft">
+        <div class="contenedorAzul">
+        </div>
+
+        <div class="contenedorRojo">
+        </div>
+
+        <div class="contenedorVerde">
+        </div>
+
+        <div class="contenedorAmarillo">
+        </div>
+    </div>
+
+    <div class="contenedorFila floatRight">
+        <div class="contenedorAzul">
+        </div>
+
+        <div class="contenedorRojo">
+        </div>
+
+        <div class="contenedorVerde">
+        </div>
+
+        <div class="contenedorAmarillo">
+        </div>
+    </div>
+
+    <div class="contenedorFila">
+        <div class="contenedorAzul" style="float: left;">
+        </div>
+
+        <div class="contenedorRojo" style="float: left;">
+        </div>
+
+        <div class="contenedorVerde" style="float: right;">
+        </div>
+
+        <div class="contenedorAmarillo" style="float: right;">
+        </div>
+    </div>
+    <h3>Opciones</h3>
+    <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+    </ul>
+</body>
+
+</html>

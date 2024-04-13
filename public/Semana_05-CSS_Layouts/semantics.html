@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>HTML y CSS: Elementos semánticos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+        body {
+            background-color: #2974A9;
+        }
+
+        header {
+            width: 100%;
+            height: 120px;
+
+            background-color: white;
+        }
+
+        header div.container {
+            margin: 0 auto;
+            width: 60%;
+            min-width: 1000px;
+
+        }
+
+        header img {
+            height: 100px;
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+
+            background-color: #007CC3;
+        }
+
+        nav ul {
+            margin: 0 auto;
+
+            width: 60%;
+            height: 100%;
+
+            list-style: none;
+        }
+
+        nav li {
+            float: left;
+
+            box-sizing: border-box;
+
+            margin: 0px 10px;
+
+            padding: 20px 30px;
+
+            height: 100%;
+
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            text-decoration: none;
+
+            background-color: #0075B9;
+        }
+
+        nav li:hover {
+            background-color: #0068A5;
+        }
+
+        section.left,
+        section.right,
+        aside {
+            color: #666;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section.left {
+            float: left;
+
+            width: 20%;
+            min-height: 900px;
+
+            background-color: #E1E1E1;
+        }
+
+        section.right {
+            float: right;
+
+            width: 20%;
+            min-height: 900px;
+
+            background-color: #BFD6E7;
+        }
+
+        aside {
+            clear: both;
+
+            width: auto;
+            min-height: 200px;
+
+            background-color: #CBCBCB;
+        }
+
+        section.left p,
+        section.right p,
+        aside p {
+            margin: 2rem;
+        }
+
+        article {
+            float: left;
+
+            padding: 15px;
+
+            width: 60%;
+            min-height: 900px;
+
+            background-color: white;
+
+            box-sizing: border-box;
+        }
+
+        footer {
+
+            width: 100%;
+            height: 200px;
+
+            background-color: #075791;
+        }
+
+        h1 {
+            margin: 15px 0px;
+
+            color: #0068A5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 36px;
+        }
+
+        h2 {
+            margin: 10px 0px;
+            color: #0068A5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+
+        p {
+            margin-bottom: 20px;
+
+            color: #666;
+
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-align: justify;
+            text-decoration: none;
+
+            line-height: 1.5;
+        }
+
+        article p:nth-child(odd) {
+            background: #EDEDED;
+        }
+
+        article p:nth-child(even) {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo-fcad.png" class="logo" alt="Logo UNER-FCAD"
+                title="Facultad de Ciencias de la Administración" />
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Institucional</li>
+            <li>Académica</li>
+            <li>Extensión</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="left">
+            <p>Section class="left"</p>
+        </section>
+        <article>
+            <section>
+                <hgroup>
+                    <h1>Article > Section > HGroup > H1.1</h1>
+                    <h2>Article > Section > HGroup > H2.1</h2>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis aliquam felis vel vehicula.
+                    Praesent eget magna eget lectus tristique laoreet non at leo. Nunc maximus neque non lacinia
+                    efficitur. Donec vitae convallis nisl. Proin pulvinar magna sit amet purus mattis, ac facilisis sem
+                    suscipit. Maecenas ultrices ante non sapien vestibulum posuere. Mauris non sapien sed dui pulvinar
+                    placerat. Nam nibh arcu, porttitor a fermentum in, euismod sed dui.
+                </p>
+                <p>
+                    Nunc eleifend ultricies convallis. Suspendisse potenti. Duis suscipit libero ac massa pharetra
+                    condimentum. Fusce tempor lorem mi, ac cursus ipsum euismod eget. Nullam mauris lorem, tincidunt nec
+                    felis non, interdum venenatis diam. Pellentesque quis ullamcorper massa, sit amet maximus enim.
+                    Donec nulla lacus, commodo sed sagittis non, accumsan nec velit. Donec cursus rutrum lorem, id
+                    sodales orci semper vitae. Quisque pretium quis nisi ut accumsan. Etiam enim ex, tristique a ornare
+                    nec, volutpat quis tortor. Aliquam ultrices tristique placerat.
+                </p>
+            </section>
+            <section>
+                <hgroup>
+                    <h1>Article > Section > HGroup > H1.2</h1>
+                    <h2>Article > Section > HGroup > H2.2</h2>
+                </hgroup>
+                <p>
+                    Maecenas consectetur velit elit, vel dapibus sem consequat vitae. Integer a augue a urna tincidunt
+                    sollicitudin eu eget lectus. Aliquam purus quam, commodo sed leo et, lacinia elementum velit.
+                    Pellentesque bibendum commodo accumsan. Nam a faucibus libero, eu commodo nibh. Vestibulum placerat
+                    pellentesque porta. Phasellus metus erat, volutpat vel eros quis, lacinia sagittis eros. Duis augue
+                    leo, maximus quis ex nec, euismod placerat nisl.
+                </p>
+                <p>
+                    Integer porta, neque in laoreet placerat, nibh enim bibendum velit, non varius tellus dolor a nulla.
+                    Praesent ultrices, sapien et lacinia hendrerit, nunc mi cursus tellus, vitae mollis lorem enim
+                    rutrum leo. Donec at tortor pharetra, hendrerit nunc ac, porttitor lorem. Donec semper, ex eget
+                    sodales iaculis, lorem tortor aliquam orci, sed cursus erat leo viverra risus. Vestibulum faucibus,
+                    enim sed tempor luctus, enim est efficitur ipsum, eu rutrum augue nunc a enim. Pellentesque euismod
+                    volutpat fermentum. Aliquam rutrum tellus quis tristique pellentesque. Aenean in imperdiet ipsum.
+                    Aenean in porta nisi. Aenean eget accumsan ante. Ut at vestibulum est. Sed ut mattis ex.
+                </p>
+                <p>
+                    Donec vel lacus ultricies, tristique nisi ac, finibus elit. Nullam ultrices tortor justo, ut congue
+                    enim cursus ac. Sed pellentesque pellentesque quam, in tincidunt ante hendrerit id. Cras pulvinar
+                    quam eget nisl feugiat ultrices. Cras pulvinar ultricies massa ac consectetur. Maecenas at
+                    scelerisque est. Sed vel leo non ligula viverra viverra. Fusce lacinia nec turpis eu euismod. Nam a
+                    lorem a massa lacinia scelerisque.
+                </p>
+                <h3>Opciones</h3>
+                <ul>
+                    <li><a href="index.html">Volver al inicio</a></li>
+                </ul>
+            </section>
+
+        </article>
+        <section class="right">
+            <p>Section class="right"</p>
+        </section>
+        <aside>
+            <p>aside</p>
+        </aside>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

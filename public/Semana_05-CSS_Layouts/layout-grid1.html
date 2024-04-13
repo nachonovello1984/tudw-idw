@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML y CSS: Grid CSS Layout</title>
+    <style type="text/css">
+        body {
+            margin: 40px;
+        }
+
+        .ejemplo1 {
+            margin-bottom: 40px;
+        }
+
+        .ejemplo1 .wrapper {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 20px;
+            background-color: #fff;
+        }
+
+        .ejemplo1 .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        /********/
+
+
+        .ejemplo2 .wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 100px 100px 100px;
+            background-color: #fff;
+        }
+
+        .ejemplo2 .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+
+        .ejemplo2 .a {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        .ejemplo2 .b {
+            grid-column: 3;
+            grid-row: 1 / 3;
+        }
+
+        .ejemplo2 .c {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .ejemplo2 .d {
+            grid-column: 2;
+            grid-row: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ejemplo1">
+        <h1>Ejemplo 1 </h1>
+        <div class="wrapper">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </div>
+
+    <div class="ejemplo2">
+        <h1>Ejemplo 2 </h1>
+        <div class="wrapper">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+            <div class="box">X</div>
+        </div>
+    </div>
+</body>
+
+</html>
