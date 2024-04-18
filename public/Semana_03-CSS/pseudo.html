@@ -1,62 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>CSS - Pseudoelementos y pseudoclases</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css" media="screen">
-            ul{
-                color: black;
-            }
 
-            ul li:first-child a{
-                color: red;
-            }
-            
-            a{
-                color: blue;
-                text-decoration: none;
-            }
-            
-            a:link, a:visited, a.active, a:hover{
-                font-weight: bold;
-                text-decoration: underline;
-            }
-            
-            p{
-                color: black;
-                font-family: Arial, sans-serif;
-                font-weight: normal;
-                text-decoration: none;
-            }
-            
-            p::before{
-                content: "Texto Antes";
-                color: blue;
-            }
-            
-            p::after{
-                content: "Texto Después";
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <ul>
-            <li><a href="#">Enlace 1</a></li>
-            <li><a href="#">Enlace 2</a></li>
-            <li><a href="#">Enlace 3</a></li>
-            <li><a href="#">Enlace 4</a></li>
-            <li><a href="#">Enlace 5</a></li>
-        </ul>
-        
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus enim vitae turpis scelerisque, a finibus diam malesuada. Integer cursus, libero at maximus pellentesque, ligula magna commodo mi, at ornare massa tortor vitae elit. Cras semper, urna non convallis luctus, quam velit pulvinar libero, id bibendum lacus diam in orci. Maecenas nulla mi, tempor in eros non, bibendum cursus tellus. Proin porta, dolor in ultrices molestie, nibh mi sollicitudin orci, pulvinar venenatis sem velit a mi. Morbi tincidunt elementum ultricies. Donec sem elit, porttitor at dui id, dignissim sollicitudin est. Ut dictum, dolor vel interdum rutrum, ipsum quam feugiat lectus, et aliquam quam libero in augue. Nam congue consequat elit vel commodo. Vivamus egestas vel arcu sit amet lobortis
-        </p>    
-        
-        <ul>
-            <li><a href="index.html">Volver al inicio.</a></li>
-        </ul>
-    </body>
+<head>
+    <title>CSS - Pseudoelementos y pseudoclases</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="screen">
+        ul {
+            color: black;
+        }
+
+        ul li:first-child a {
+            color: red;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:link,
+        a:visited,
+        a.active,
+        a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        p {
+            color: black;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        p::before {
+            content: "Texto Antes";
+            color: blue;
+        }
+
+        p::after {
+            content: "Texto Después";
+            color: blue;
+        }
+
+        th, td{
+            padding: 0.5rem 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <li><a href="#">Enlace 4</a></li>
+        <li><a href="#">Enlace 5</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus enim vitae turpis scelerisque, a
+        finibus diam malesuada. Integer cursus, libero at maximus pellentesque, ligula magna commodo mi, at ornare massa
+        tortor vitae elit. Cras semper, urna non convallis luctus, quam velit pulvinar libero, id bibendum lacus diam in
+        orci. Maecenas nulla mi, tempor in eros non, bibendum cursus tellus. Proin porta, dolor in ultrices molestie,
+        nibh mi sollicitudin orci, pulvinar venenatis sem velit a mi. Morbi tincidunt elementum ultricies. Donec sem
+        elit, porttitor at dui id, dignissim sollicitudin est. Ut dictum, dolor vel interdum rutrum, ipsum quam feugiat
+        lectus, et aliquam quam libero in augue. Nam congue consequat elit vel commodo. Vivamus egestas vel arcu sit
+        amet lobortis
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Capital</th>
+                <th>Moneda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Argentina</td>
+                <td>Buenos Aires</td>
+                <td>Peso argentino</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td>Brasilia</td>
+                <td>Real brasileño</td>
+            </tr>
+            <tr>
+                <td>Chile</td>
+                <td>Santiago</td>
+                <td>Peso chileno</td>
+            </tr>
+            <tr>
+                <td>Colombia</td>
+                <td>Bogotá</td>
+                <td>Peso colombiano</td>
+            </tr>
+            <tr>
+                <td>Ecuador</td>
+                <td>Quito</td>
+                <td>Dólar estadounidense</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td>Ciudad de México</td>
+                <td>Peso mexicano</td>
+            </tr>
+            <tr>
+                <td>Perú</td>
+                <td>Lima</td>
+                <td>Sol peruano</td>
+            </tr>
+            <tr>
+                <td>Uruguay</td>
+                <td>Montevideo</td>
+                <td>Peso uruguayo</td>
+            </tr>
+            <tr>
+                <td>Venezuela</td>
+                <td>Caracas</td>
+                <td>Bolívar soberano</td>
+            </tr>
+            <tr>
+                <td>Bolivia</td>
+                <td>La Paz</td>
+                <td>Boliviano</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li><a href="index.html">Volver al inicio.</a></li>
+    </ul>
+</body>
+
 </html>
