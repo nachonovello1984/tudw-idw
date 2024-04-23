@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Verdad</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <script>
+        checkVerdad();
+
+        function checkVerdad() {
+
+            checkVerdadNumero();
+
+            checkVerdadString();
+        }
+
+        /**
+         * Prueba el valor de verdad asociado a los números.
+         * @returns {undefined}
+         */
+        function checkVerdadNumero() {
+            let enteroUno = 0;
+            let enteroDos = 84;
+
+            let puntoFlotante = 11.85;
+
+            if (enteroUno) {
+                document.write(enteroUno + " es verdadero. <br/>");
+            } else {
+                document.write(enteroUno + " es falso. <br/>");
+            }
+
+            if (enteroDos) {
+                document.write(enteroDos + " es verdadero. <br/>");
+            } else {
+                document.write(enteroDos + " es falso. <br/>");
+            }
+
+            if (puntoFlotante) {
+                document.write(puntoFlotante + " es verdadero. <br/>");
+            } else {
+                document.write(puntoFlotante + " es falso. <br/>");
+            }
+        }
+
+        /**
+         * Prueba el valor de verdad asociado a los strings.
+         * @returns {undefined}
+         */
+        function checkVerdadString() {
+            let stringVacio = "";
+            let stringNoVacio = "string no vacío";
+
+            if (stringVacio) {
+                document.write("stringVacio es verdadero. <br/>");
+            } else {
+                document.write("stringVacio es falso. <br/>");
+            }
+
+            if (stringNoVacio) {
+                document.write(stringNoVacio + " es verdadero. <br/>");
+            } else {
+                document.write(stringNoVacio + " es falso. <br/>");
+            }
+        }
+    </script>
+</body>
+
+</html>

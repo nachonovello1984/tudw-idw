@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Objetos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+   
+</head>
+
+<body>
+    <p>Hola soy un párrafo</p>
+    <script>
+        let miObjeto = {
+            nombre: "Ignacio",
+            apellido: "Novello"
+        };
+
+        //Acceso a propiedades utilizando el operador "."
+        document.write('<h2>Acceso a propiedades utilizando el operador "."</h2>');
+        document.write("Apellido: " + miObjeto.apellido + ", Nombre: " + miObjeto.nombre + "<br/>");
+        //Acceso a propiedades utilizando el operador "[]"
+        document.write('<h2>Acceso a propiedades utilizando el operador "[]"</h2>');
+        document.write("Apellido: " + miObjeto['apellido'] + ", Nombre: " + miObjeto['nombre'] + "<br/>");
+
+        document.write('<h3>Acceso a propiedades usando for-in</h3>');
+        for (let nombrePropiedad in miObjeto) {
+            if (miObjeto.hasOwnProperty(nombrePropiedad)) {
+                let valor = miObjeto[nombrePropiedad];
+                document.write("Nombre: " + nombrePropiedad + "<br/>");
+                document.write("Valor: " + valor + "<br/>");
+            }
+        }
+
+        document.write("miObjeto.toString():" + miObjeto.toString() + "<br/>");
+        document.write("miObjeto.hasOwnProperty('apellido'):" + miObjeto.hasOwnProperty('apellido') + "<br/>");
+        document.write("miObjeto.hasOwnProperty('toString'):" + miObjeto.hasOwnProperty('toString') + "<br/>");
+    </script>
+</body>
+
+</html>

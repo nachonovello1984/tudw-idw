@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Browsers y ventanas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <style type="text/css">
+        ul li a {
+            color: blue;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        ul li a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Browsers y Ventanas</h1>
+    <h2>Cajas de Diálogo</h2>
+    <ul>
+        <li>
+            <a id="alert" onclick="mostrarAlert();">alert()</a>
+        </li>
+        <li>
+            <a id="confirm" onclick="mostrarConfirm();">confirm()</a>
+        </li>
+        <li>
+            <a id="prompt" onclick="mostrarPrompt();">prompt()</a>
+        </li>
+    </ul>
+    <h2>Ventanas de Browser</h2>
+    <ul>
+        <li>
+            <a id="openGoogle" onclick="ejecutarOpenGoogle();">openGoogle()</a>
+        </li>
+        <li>
+            <a id="open" onclick="ejecutarOpen();">open()</a>
+        </li>
+        <li>
+            <a id="close" onclick="ejecutarClose();">close()</a>
+        </li>
+        <li>
+            <a id="scrollBy" onclick="ejecutarScrollBy();">scrollBy()</a>
+        </li>
+        <li>
+            <a id="scrollTo" onclick="ejecutarScrollTo();">scrollTo()</a>
+        </li>
+    </ul>
+    <h2>history</h2>
+    <ul>
+        <li>
+            <a id="history.back" onclick="window.history.back();">window.history.back()</a>
+        </li>
+        <li>
+            <a id="history.forward" onclick="window.history.forward();">window.history.forward()</a>
+        </li>
+        <li>
+            <a id="history.go" onclick="window.history.go(-2);">window.history.go(-2)</a>
+        </li>
+    </ul>
+    <h2>location</h2>
+    <ul>
+        <li>
+            <a id="window.location" onclick="alert(window.location);">window.location</a>
+        </li>
+        <li>
+            <a id="window.location.modif" onclick="window.location = 'https://www.google.com';">Ir a Google!</a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        //Cajas de Diálogo
+        function mostrarAlert() {
+            alert('Mensaje generado con alert()');
+        }
+
+        function mostrarConfirm() {
+            alert(confirm('Mensaje generado con confirm()'));
+        }
+
+        function mostrarPrompt() {
+            alert(prompt('Mensaje generado con prompt()'));
+        }
+
+        //Ventanas del browser
+        function ejecutarOpenGoogle() {
+            open("http://www.google.com.ar", "Otra Ventana",
+                "location=yes, menubar=yes, resizable=yes, scrollbars=yes,status=yes, toolbar=yes, width=600, height=400, left=10, top=10");
+        }
+
+        function ejecutarOpen() {
+            open("ventanasHistorial.html", "Otra Ventana",
+                "location=yes, menubar=yes, resizable=yes, scrollbars=yes,status=yes, toolbar=yes, width=600, height=400, left=10, top=10");
+        }
+
+        function ejecutarClose() {
+            close();
+        }
+
+        function ejecutarMoveBy() {
+            moveBy(10, 10);
+        }
+
+        function ejecutarMoveTo() {
+            moveTo(300, 200);
+        }
+
+        function ejecutarResizeBy() {
+            resizeBy(-100, 0);
+        }
+
+        function ejecutarResizeTo() {
+            resizeTo(300, 200);
+        }
+
+        function ejecutarScrollBy() {
+            scrollBy(0, 120);
+        }
+
+        function ejecutarScrollTo() {
+            scrollTo(0, 20);
+        }
+
+        function ejecutarPrint() {
+            print();
+        }
+    </script>
+</body>
+
+</html>
