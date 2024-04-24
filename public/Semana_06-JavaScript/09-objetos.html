@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Objetos - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+
+        <div class="contenedor">
+            <h2>Objetos</h2>
+            <p>Hola soy un párrafo</p>
+            <script>
+                let miObjeto = {
+                    nombre: "Ignacio",
+                    apellido: "Novello"
+                };
+
+                //Acceso a propiedades utilizando el operador "."
+                document.write('<h3>Acceso a propiedades utilizando el operador "."</h3>');
+                document.write("Apellido: " + miObjeto.apellido + ", Nombre: " + miObjeto.nombre + "<br/>");
+                //Acceso a propiedades utilizando el operador "[]"
+                document.write('<h3>Acceso a propiedades utilizando el operador "[]"</h3>');
+                document.write("Apellido: " + miObjeto['apellido'] + ", Nombre: " + miObjeto['nombre'] + "<br/>");
+
+                document.write('<h3>Acceso a propiedades usando for-in</h3>');
+                for (let nombrePropiedad in miObjeto) {
+                    if (miObjeto.hasOwnProperty(nombrePropiedad)) {
+                        let valor = miObjeto[nombrePropiedad];
+                        document.write("Nombre: " + nombrePropiedad + "<br/>");
+                        document.write("Valor: " + valor + "<br/>");
+                    }
+                }
+
+                document.write("miObjeto.toString():" + miObjeto.toString() + "<br/>");
+                document.write("miObjeto.hasOwnProperty('apellido'):" + miObjeto.hasOwnProperty('apellido') + "<br/>");
+                document.write("miObjeto.hasOwnProperty('toString'):" + miObjeto.hasOwnProperty('toString') + "<br/>");
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

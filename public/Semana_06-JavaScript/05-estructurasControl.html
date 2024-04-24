@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Estructuras de Control - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Estructuras de Control</h2>
+            <script>
+
+                testAll();
+
+                function testAll() {
+                    testRepetitivas();
+
+                    testBreakContinue();
+
+                    testCondicionales();
+
+                    testTryCatchThrow();
+                }
+
+                function testRepetitivas() {
+                    document.write("<h2>Test Bucle While</h2>");
+
+                    let times = 10;
+                    while (times--) {
+                        document.write("Introducción al Desarrollo Web!!!");
+                        document.write("<br/>");
+                    }
+
+                    document.write("<br/>");
+
+                    document.write("<h2>Test Bucle For</h2>");
+
+                    for (let i = 0; i < 10; i++) {
+                        document.write("Introducción al Desarrollo Web!!!");
+                        document.write("<br/>");
+                    }
+                    document.write("<br/>");
+                }
+
+                function testBreakContinue() {
+                    document.write("<h2>Test Break y Continue</h2>");
+                    document.write("Impresión pares usando continue:");
+                    document.write("<br/>");
+                    for (let i = 0; i < 10; i++) {
+                        if (i % 2 !== 0) {
+                            continue;
+                        }
+
+                        document.write("Número: " + i);
+                        document.write("<br/>");
+                    }
+
+                    document.write("<br/>");
+                    document.write("<h2>Cortando un bucle usando break:</h2>");
+
+                    for (let j = 0; j < 10; j++) {
+                        if (j > 5) {
+                            break;
+                        }
+                        document.write(`Número:  ${j}`);
+                        document.write("<br/>");
+                    }
+                }
+
+                function testCondicionales() {
+                    document.write("<h2>If-else</h2>");
+                    if (false) {
+                        document.write("Verdadero");
+                        document.write("<br/>");
+                    } else {
+                        document.write("Falso");
+                        document.write("<br/>");
+                    }
+
+                    document.write("<h2>Else-if</h2>");
+                    if (false) {
+                        document.write("if (false)");
+                        document.write("<br/>");
+                    } else if (true) {
+                        document.write("else-if");
+                        document.write("<br/>");
+                    }
+
+                    document.write("<h2>Switch-case</h2>");
+                    let test = 2;
+                    switch (test) {
+                        case 0:
+                            document.write(`Entró en 0. test vale: ${test} <br/>`);
+                            break;
+                        case 1:
+                            document.write(`Entró en 1. test vale: ${test} <br/>`);
+                            break;
+                        case 2:
+                            document.write(`Entró en 2. test vale: ${test} <br/>`);
+                            break;
+                        default:
+                            document.write(`Entró en default. test vale: ${test} <br/>`);
+                            break;
+                    }
+
+                    document.write("<h2>Operador ternario</h2>");
+                    document.write("Test 1: " + (true) ? 'true ' : 'false ');
+                    document.write("Test 2: " + (true) ? 5 : 6);
+                }
+
+                function controlarYDividir(param1, param2) {
+                    if (param2 === 0) {
+                        throw new Error('param2 no puede ser 0');
+                    }
+
+                    return param1 / param2;
+                }
+
+                function testTryCatchThrow() {
+                    document.write("<h2>Test Try-Catch-Throw</h2>");
+                    let variable1 = 15;
+                    let variable2 = 0;
+
+                    try {
+                        let resultado = controlarYDividir(variable1, variable2);
+                        document.write(`El resultado es: ${resultado} <br/>`);
+                    } catch (exception) {
+                        document.write(exception.toString() + "<br/>");
+                    } finally {
+                        document.write('finally <br/>');
+                    }
+                }
+
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

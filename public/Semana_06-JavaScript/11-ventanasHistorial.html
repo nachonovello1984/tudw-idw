@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Ventas e historial - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Ventanas e historial</h2>
+            <h3>Cajas de Diálogo</h3>
+            <ul>
+                <li>
+                    <a id="alert" onclick="mostrarAlert();">alert()</a>
+                </li>
+                <li>
+                    <a id="confirm" onclick="mostrarConfirm();">confirm()</a>
+                </li>
+                <li>
+                    <a id="prompt" onclick="mostrarPrompt();">prompt()</a>
+                </li>
+            </ul>
+            <h2>Ventanas de Browser</h2>
+            <ul>
+                <li>
+                    <a id="openGoogle" onclick="ejecutarOpenGoogle();">openGoogle()</a>
+                </li>
+                <li>
+                    <a id="open" onclick="ejecutarOpen();">open()</a>
+                </li>
+                <li>
+                    <a id="close" onclick="ejecutarClose();">close()</a>
+                </li>
+                <li>
+                    <a id="scrollBy" onclick="ejecutarScrollBy();">scrollBy()</a>
+                </li>
+                <li>
+                    <a id="scrollTo" onclick="ejecutarScrollTo();">scrollTo()</a>
+                </li>
+            </ul>
+            <h2>history</h2>
+            <ul>
+                <li>
+                    <a id="history.back" onclick="window.history.back();">window.history.back()</a>
+                </li>
+                <li>
+                    <a id="history.forward" onclick="window.history.forward();">window.history.forward()</a>
+                </li>
+                <li>
+                    <a id="history.go" onclick="window.history.go(-2);">window.history.go(-2)</a>
+                </li>
+            </ul>
+            <h2>location</h2>
+            <ul>
+                <li>
+                    <a id="window.location" onclick="alert(window.location);">window.location</a>
+                </li>
+                <li>
+                    <a id="window.location.modif" onclick="window.location = 'https://www.google.com';">Ir a Google!</a>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                //Cajas de Diálogo
+                function mostrarAlert() {
+                    alert('Mensaje generado con alert()');
+                }
+
+                function mostrarConfirm() {
+                    alert(confirm('Mensaje generado con confirm()'));
+                }
+
+                function mostrarPrompt() {
+                    alert(prompt('Mensaje generado con prompt()'));
+                }
+
+                //Ventanas del browser
+                function ejecutarOpenGoogle() {
+                    open("http://www.google.com.ar", "Otra Ventana",
+                        "location=yes, menubar=yes, resizable=yes, scrollbars=yes,status=yes, toolbar=yes, width=600, height=400, left=10, top=10");
+                }
+
+                function ejecutarOpen() {
+                    open("11-ventanasHistorial.html", "Otra Ventana",
+                        "location=yes, menubar=yes, resizable=yes, scrollbars=yes,status=yes, toolbar=yes, width=600, height=400, left=10, top=10");
+                }
+
+                function ejecutarClose() {
+                    close();
+                }
+
+                function ejecutarMoveBy() {
+                    moveBy(10, 10);
+                }
+
+                function ejecutarMoveTo() {
+                    moveTo(300, 200);
+                }
+
+                function ejecutarResizeBy() {
+                    resizeBy(-100, 0);
+                }
+
+                function ejecutarResizeTo() {
+                    resizeTo(300, 200);
+                }
+
+                function ejecutarScrollBy() {
+                    scrollBy(0, 120);
+                }
+
+                function ejecutarScrollTo() {
+                    scrollTo(0, 20);
+                }
+
+                function ejecutarPrint() {
+                    print();
+                }
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Verdad - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Verdad</h2>
+            <script>
+                checkVerdad();
+
+                function checkVerdad() {
+
+                    checkVerdadNumero();
+
+                    checkVerdadString();
+                }
+
+                /**
+                 * Prueba el valor de verdad asociado a los números.
+                 * @returns {undefined}
+                 */
+                function checkVerdadNumero() {
+                    let enteroUno = 0;
+                    let enteroDos = 84;
+
+                    let puntoFlotante = 11.85;
+
+                    if (enteroUno) {
+                        document.write(enteroUno + " es verdadero. <br/>");
+                    } else {
+                        document.write(enteroUno + " es falso. <br/>");
+                    }
+
+                    if (enteroDos) {
+                        document.write(enteroDos + " es verdadero. <br/>");
+                    } else {
+                        document.write(enteroDos + " es falso. <br/>");
+                    }
+
+                    if (puntoFlotante) {
+                        document.write(puntoFlotante + " es verdadero. <br/>");
+                    } else {
+                        document.write(puntoFlotante + " es falso. <br/>");
+                    }
+                }
+
+                /**
+                 * Prueba el valor de verdad asociado a los strings.
+                 * @returns {undefined}
+                 */
+                function checkVerdadString() {
+                    let stringVacio = "";
+                    let stringNoVacio = "string no vacío";
+
+                    if (stringVacio) {
+                        document.write("stringVacio es verdadero. <br/>");
+                    } else {
+                        document.write("stringVacio es falso. <br/>");
+                    }
+
+                    if (stringNoVacio) {
+                        document.write(stringNoVacio + " es verdadero. <br/>");
+                    } else {
+                        document.write(stringNoVacio + " es falso. <br/>");
+                    }
+                }
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

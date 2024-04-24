@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Objetos 2 - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Objetos 2</h2>
+            <script>
+                function Persona(nombre, apellido) {
+                    this.nombre = nombre;
+                    this.apellido = apellido;
+
+                    this.saludar = function () {
+                        return "Hola " + this.apellido + ", " + this.nombre + "!";
+                    }
+                }
+
+                let persona = new Persona("Ignacio", "Novello");
+
+                document.write(persona.saludar());
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>

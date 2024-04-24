@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Strings - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <script>
+                let texto = "Probando strings en JavaScript";
+                document.write(`<h2>${texto}</h2>`);
+
+                testMayusculasMinusculas(texto);
+
+                testExtraccion(texto);
+
+                testConversionArray(texto);
+
+                testBusquedaReemplazo(texto);
+
+                testConversion();
+
+
+                function testMayusculasMinusculas(texto) {
+                    document.write("<h3>Mayúsculas y Minúsculas</h3>");
+                    document.write("toUpperCase(): " + texto.toUpperCase() + "<br/>");
+                    document.write("toLoweCase(): " + texto.toLowerCase() + "<br/>");
+                }
+
+                function testExtraccion(texto) {
+                    document.write("<h3>Extracción</h3>");
+                    document.write("charAt(0): " + texto.charAt(0) + "<br/>");
+                    document.write("slice(0, 10): " + texto.slice(0, 10) + "<br/>");
+                    document.write("slice(0, -10): " + texto.slice(0, -10) + "<br/>");
+                    document.write("substring(0, 10): " + texto.substring(0, 10) + "<br/>");
+                    document.write("substring(2, 10): " + texto.substring(2, 10) + "<br/>");
+                }
+
+                function testConversionArray(texto) {
+                    document.write("<h3>Conversión a Arrays</h3>");
+                    document.write("split(' '): " + texto.split(' ') + "<br/>");
+                    document.write("split('t'): " + texto.split('t') + "<br/>");
+                }
+
+                function testBusquedaReemplazo(texto) {
+                    document.write("<h3>Búsqueda y reemplazo</h3>");
+                    document.write("indexOf('strings'): " + texto.indexOf('strings') + "<br/>");
+                    document.write("lastIndexOf(' '): " + texto.lastIndexOf(' ') + "<br/>");
+                    document.write("search('J\\w+t', 'i'): " + texto.search('J\\w+t', 'i') + "<br/>");
+                    document.write("match('J\\w+t', 'i'): " + texto.match('J\\w+t', 'i') + "<br/>");
+                    document.write("replace('JavaScript', 'Lalala'): " + texto.replace('JavaScript', 'Lalala'));
+                }
+
+
+                function testConversion() {
+                    document.write("<h3>Conversión</h3>");
+                    document.write("4 + 4: " + 4 + 4 + "<br/>");
+                    document.write("4 + 4: " + (4 + 4) + "<br/>");
+                    document.write("parseInt(): " + (parseInt('4') + 4) + "<br/>");
+                    document.write("parseFloat(): " + (parseFloat('4.8f') + 5.2) + "<br/>");
+                }
+
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

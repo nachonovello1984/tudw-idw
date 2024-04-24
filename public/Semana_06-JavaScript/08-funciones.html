@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Funciones - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+
+        <div class="contenedor">
+            <h2>Funciones</h2>
+            <script>
+                testFuncionesAnonimas();
+
+                testArgumentos();
+
+                function testFuncionesAnonimas() {
+                    document.write('<h3>Funciones Anónimas</h3>');
+                    document.write('<h4>Guardando funciones en variables</h4>');
+                    let var1 = (function () {
+                        document.write("Función almacenada en var1");
+                    });
+
+                    var1();
+
+                    document.write('<h4>Autoinvocación</h4>');
+                    (function () {
+                        document.write("Función anónima que se autoinvoca");
+                    })();
+
+                    function funcionExterior() {
+                        return function () {
+                            return 2 + 2;
+                        };
+                    }
+
+                    document.write('<h4>Retornando funciones</h4>');
+                    document.write(funcionExterior()());
+                }
+
+                function testArgumentos() {
+                    document.write('<h3>Argumentos</h2>');
+                    document.write('<h4>Proveyendo menor cantidad de argumentos</h4>');
+
+                    function argumentosMenor(arg0, arg1, arg2) {
+                        document.write('arg0: ' + arg0 + '<br/>');
+                        document.write('arg1: ' + arg1 + '<br/>');
+                        document.write('arg2: ' + arg2 + '<br/>');
+                    }
+
+                    argumentosMenor('a', 'b');
+
+                    document.write('<h4>Proveyendo mayor cantidad de argumentos</h4>');
+                    function argumentosMayor(arg0) {
+                        document.write('arg0: ' + arg0 + '<br/>');
+                        document.write('arguments[1]: ' + arguments[1] + '<br/>');
+                        document.write('arguments[2]: ' + arguments[2] + '<br/>');
+                    }
+
+                    argumentosMayor('a', 'b', 'c');
+
+                }
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

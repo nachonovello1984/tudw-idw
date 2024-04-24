@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>JavaScript: Arrays - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <script>
+                testCreacion();
+
+                testRecorridos();
+
+                testAdicion();
+
+                testRemocion();
+
+                testExtraccion();
+
+                testOrdenacion();
+
+                testDesestructuracion();
+
+                function testCreacion() {
+                    document.write('<h2>Creación de Arrays</h2>');
+
+                    let miArray1 = [1, 2, 3];
+                    document.write(`miArray1: ${miArray1.toString()} <br/>`);
+
+                    let miArray2 = new Array(3);
+                    document.write(`miArray2: ${miArray2.toString()} <br/>`);
+                    document.write(`miArray2.length: ${miArray2.length} <br/>`);
+                    document.write(`miArray2[0]: ${miArray2[0]} <br/>`);
+                    document.write(`miArray2[1]: miArray2[1] <br/>`);
+                    document.write(`miArray2[2]: miArray2[2] <br/>`);
+                }
+
+
+                function testRecorridos() {
+                    document.write('<h2>Recorridos de Arrays</h2>');
+                    document.write('<h3>Utilizando un bucle for</h3>');
+                    let miArray = [1, 2, 3, 4, 5];
+                    for (let i = 0; i < miArray.length; i++) {
+                        document.write(`miArray[${i}]: ${miArray[i]} <br/>`);
+                    }
+
+                    document.write('<h3>Utilizando un bucle for-of</h3>');
+                    let j = 0;
+                    for (let i of miArray) {
+                        document.write(`miArray[${j++}]: ${i} <br/>`);
+                    }
+
+                    document.write('<h3>Utilizando un bucle forEach()</h3>');
+                    miArray.forEach(function (item) {
+                        document.write(`miArray: ${item} <br/>`);
+                    });
+                    //miArray.forEach(item => document.write(`miArray: ${item} <br/>`));
+                }
+
+                function testAdicion() {
+                    document.write('<h2>Adición</h2>');
+                    document.write('<h3>concat()</h3>');
+
+                    let arrayUno = [1, 2, 3, 4];
+                    let arrayDos = [5, 6, 7, 8];
+                    let arrayTres = arrayUno.concat(arrayDos);
+
+                    document.write(`arrayUno: ${arrayUno.toString()} <br/>`);
+                    document.write(`arrayDos: ${arrayDos.toString()} <br/>`);
+                    document.write(`arrayTres: ${arrayTres.toString()} <br/>`);
+
+                    document.write('<h3>push()</h3>');
+
+                    let arrayCuatro = [1, 2, 3, 4];
+                    document.write(`arrayCuatro: ${arrayCuatro.toString()} <br/>`);
+                    arrayCuatro.push(5);
+                    document.write(`arrayCuatro.push(5): ${arrayCuatro.toString()} <br/>`);
+                    arrayCuatro.push([6, 7]);
+                    document.write(`arrayCuatro.push([6,7]): ${arrayCuatro.toString()} <br/>`);
+
+                    document.write('<h3>unshift()</h3>');
+
+                    let arrayCinco = [1, 2, 3, 4];
+                    document.write(`arrayCinco: ${arrayCinco.toString()} <br/>`);
+                    arrayCinco.unshift(5);
+                    document.write(`arrayCinco.unshift(5): ${arrayCinco.toString()} <br/>`);
+                    arrayCinco.unshift([6, 7]);
+                    document.write(`arrayCinco.unshift([6,7]): ${arrayCinco.toString()} <br/>`);
+                }
+
+                function testRemocion() {
+                    document.write('<h2>Remoción</h2>');
+                    document.write('<h3>pop()</h3>');
+
+                    let arrayPop = [1, 2, 3, 4];
+                    document.write(`arrayUno: ${arrayPop.toString()}<br/>`);
+                    arrayPop.pop();
+                    document.write(`arrayUno.pop(): ${arrayPop.toString()}<br/>`);
+                    arrayPop.pop();
+                    document.write(`arrayUno.pop(): ${arrayPop.toString()}<br/>`);
+
+                    document.write('<h3>shift()</h3>');
+                    let arrayShift = [1, 2, 3, 4];
+                    document.write(`arrayShift: ${arrayShift.toString()}<br/>`);
+                    arrayShift.shift();
+                    document.write(`arrayShift.shift(): ${arrayShift.toString()}<br/>`);
+                    arrayShift.shift();
+                    document.write(`arrayShift.shift(): ${arrayShift.toString()}<br/>`);
+                }
+
+                function testExtraccion() {
+                    document.write('<h2>Extracción</h2>');
+                    document.write('<h3>slice()</h3>');
+
+                    let arraySlice = [1, 2, 3, 4];
+                    document.write(`arraySlice: ${arraySlice.toString()} <br/>`);
+                    document.write(`arraySlice.slice(0, 2): ${arraySlice.slice(0, 2).toString()} <br/>`);
+                    document.write(`arraySlice.slice(1, -1): ${arraySlice.slice(1, -1).toString()} <br/>`);
+                    document.write(`arraySlice.slice(-2): ${arraySlice.slice(-2).toString()} <br/>`);
+
+                    document.write('<h3>splice()</h3>');
+                    document.write(`arraySplice: ${[1, 2, 3].toString()}<br/>`);
+                    document.write(`arraySplice.splice(2): ${[1, 2, 3, 4].splice(2).toString()}<br/>`);
+                    document.write(`arraySplice.splice(1, 1): ${[1, 2, 3, 4].splice(1, 1).toString()}<br/>`);
+                }
+
+                function testOrdenacion() {
+                    document.write('<h2>Ordenación</h2>');
+                    document.write('<h3>reverse()</h3>');
+
+                    let arrayReverse = [1, 2, 3, 4];
+                    document.write(`arrayReverse: ${arrayReverse.toString()}<br/>`);
+                    document.write(`arrayReverse.reverse(): " + arrayRevers${verse().toString()}<br/>`);
+
+                    let arraySort = [4, 3, 2, 1];
+                    document.write(`arraySort: ${arraySort.toString()}<br/>`);
+
+                    arraySort.sort(function (a, b) {
+                        if (a === b) {
+                            return 0;
+                        }
+
+                        if (a > b) {
+                            return 1;
+                        }
+
+                        if (a < b) {
+                            return -1;
+                        }
+                    });
+
+                    document.write(`arraySort.sort(): ${arraySorrt().toString()} <br/>`);
+                }
+
+                function testDesestructuracion() {
+                    document.write('<h2>Desestructuración</h2>');
+                    const array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+                    const [primero, ...resto] = array;
+
+                    document.write(`primero: ${primero}<br/>`);
+
+                    document.write(`resto: ${resto}<br/>`);
+
+                }
+            </script>
+            <ul>
+                <li><a href="index.html">Ir a inicio de JavaScript</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
