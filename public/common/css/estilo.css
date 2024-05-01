@@ -54,8 +54,7 @@ main h4 {
 }
 
 main ul{
-    margin-left: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin: 2.5rem 0 2.5rem 2.5rem;
 }
 
 main p,
@@ -102,4 +101,22 @@ main li a::before {
 main li a:hover::before {
     width: 100%;
     /* Ancho completo */
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even){
+    background-color: white;
+}
+
+table tr:nth-child(odd){
+    background-color: #e7e7e7;
+}   
+
+table th, table td{
+    padding: 0.25rem 0.5rem; 
+    border: 1px solid #CCC;
 }

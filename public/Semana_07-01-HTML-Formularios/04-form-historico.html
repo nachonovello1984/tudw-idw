@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>Elementos de Formulario - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h1>Elementos de Formulario HTML</h1>
+            <form>
+                <fieldset>
+                    <legend>Elementos históricos</legend>
+                    <div class="fila">
+                        <label id="lblText" for="fieldText">input type["text"]:</label>
+                        <input id="fieldText" name="fieldText" type="text" size="50" />
+                    </div>
+                    <div class="fila">
+                        <label id="lblPassword" for="fieldPassword">input type["password"]:</label>
+                        <input id="fieldPassword" name="fieldPassword" type="password" />
+                    </div>
+                    <div class="fila">
+                        <label id="lblSelect" for="fieldSelect">Select:</label>
+                        <select id="fieldSelect">
+                            <option value="Alfa Romeo">Alfa Romeo</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                        </select>
+                    </div>
+                    <div class="fila">
+                        <label id="lblCheckbox">input type["checkbox"]:</label>
+                    </div>
+                    <div class="fila">
+                        <input type="checkbox" value="1" />Coca-Cola
+                        <input type="checkbox" value="2" />Sprite
+                        <input type="checkbox" value="3" />Pepsi
+                        <input type="checkbox" value="4" />7-up
+                    </div>
+                    <div class="fila">
+                        <label id="lblRadio">input type["radio"]:</label>
+                    </div>
+                    <div class="fila">
+                        <input type="radio" value="1" />Samsung
+                        <input type="radio" value="2" />Phillips
+                        <input type="radio" value="3" />LG
+                    </div>
+                    <div class="fila">
+                        <label id="lblTextArea" for="fieldTextArea">Textarea:</label>
+                    </div>
+                    <div class="fila">
+                        <textarea id="fieldTextArea" rows="10" cols="20"></textarea>
+                    </div>
+                    <div class="fila">
+                        <label id="lblButton" for="fieldButton">Button</label>
+                    </div>
+                    <div class="fila">
+                        <input id="fieldButton" type="button" value="Haceme click!!!" />
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" />
+            </form>
+            <ul>
+                <li><a href="index.html">Ir a inicio</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

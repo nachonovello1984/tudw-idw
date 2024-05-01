@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>Elementos de formulario HTML5 - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Elementos de formulario HTML5</h2>
+            <form>
+                <fieldset>
+                    <legend>Variados tipos de entrada</legend>
+                    <div class="fila">
+                        <label>Datalist Test:</label>
+                        <input list="datalistAutos" name="autos" />
+                        <datalist id="datalistAutos">
+                            <option value="Alfa Romeo">Alfa Romeo</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                        </datalist>
+                    </div>
+                    <div class="fila">
+                        <label>URL:</label>
+                        <input type="url" name="url" />
+                    </div>
+                    <div class="fila">
+                        <label>Email:</label>
+                        <input type="email" name="email" autocomplete="false"/>
+                    </div>
+                    <div class="fila">
+                        <label>Número:</label>
+                        <input type="number" name="puntos" min="1" max="99" />
+                    </div>
+                    <div class="fila">
+                        <label>Rango: </label>
+                        <input type="range" name="range" min="1" max="10" />
+                    </div>
+                    <div class="fila">
+                        <label>Fecha: </label>
+                        <input type="date" name="date" />
+                    </div>
+                    <div class="fila">
+                        <label>Semana:</label>
+                        <input type="week" name="week" />
+                    </div>
+                    <div class="fila">
+                        <label>Hora:</label>
+                        <input type="time" name="time" />
+                    </div>
+                    <div class="fila">
+                        <label>Fecha y Hora:</label>
+                        <input type="datetime-local" name="datetimelocal" />
+                    </div>
+                    <div class="fila">
+                        <label>Color:</label>
+                        <input type="color" name="color" />
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" />
+            </form>
+            <ul>
+                <li><a href="index.html">Ir a inicio</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

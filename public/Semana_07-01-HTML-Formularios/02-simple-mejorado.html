@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>Formulario Simple (Mejorado) - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>Formulario Simple (Mejorado)</h2>
+            <form action="02-destino.html" method="GET">
+                <fieldset>
+                    <legend>Datos de identificación</legend>
+                    <div class="fila">
+                        <label id="lblApellido" for="txtApellido">Apellido</label>
+
+                        <input id="txtApellido" name="apellido" type="text" size="50" maxlength="50"
+                            placeholder="Escriba aquí su/s apellido/s" required autocomplete="off" autofocus />
+                    </div>
+                    <div class="fila">
+                        <label id="lblNombre" for="txtNombre">Nombre</label>
+                        <input id="txtNombre" name="nombre" type="text" size="50"
+                            placeholder="Escriba aquí su/s nombre/s" required autocomplete="off" />
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" />
+            </form>
+            <ul>
+                <li><a href="index.html">Ir a inicio</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

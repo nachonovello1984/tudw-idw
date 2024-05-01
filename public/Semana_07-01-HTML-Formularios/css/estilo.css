@@ -1,0 +1,77 @@
+form fieldset{
+    padding: 20px;
+    
+    width: 640px;
+    height: auto;
+    
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    -border-radius: 3px;
+}
+
+form fieldset legend{
+    color: #0D47A1;
+    
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+form fieldset div.fila{
+    margin-bottom: 10px;
+
+    height: auto;
+    
+    clear: both;
+}
+
+form fieldset label{
+    display: block;
+    
+    float: left;
+
+    padding: 5px 10px;
+        
+    width: 150px;
+    
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+form input[type="text"]{ 
+    padding: 5px 10px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
+form input[type="submit"]{ 
+    margin-top: 15px;
+    
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    
+    background-color: #1565C0;
+    border: 1px solid #0D47A1;
+    
+    border-radius: 3px;
+}
+
+form input[type="submit"]:hover{ 
+    transition: background-color 1s ease-out;
+    
+    background-color: #2475d2;
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../common/css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+    <title>Esperar a que DOM esté completamente cargado - TUDW | FCAD | UNER</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor contenedor-flex">
+            <img class="logo" src="../common/img/fcad-uner-70.png" alt="Logo FCAD-UNER 70 años" />
+            <h1>Introducción al Desarrollo Web</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2>DOM esperar a que DOM esté completamente cargado</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit vestibulum mi, non blandit
+                nibh
+                rutrum facilisis. Curabitur nec dolor nisi. Suspendisse egestas lacinia bibendum. Donec sed varius
+                massa.
+                Proin non ornare diam. Proin magna leo, ullamcorper non laoreet id, vehicula sed lorem. In eget pharetra
+                tortor. Quisque fringilla velit vel sapien sagittis, id malesuada felis gravida. Ut in tortor sed lectus
+                auctor mollis congue at justo. Mauris at imperdiet magna. Mauris ac iaculis augue, in lacinia sem. In
+                hac
+                habitasse platea dictumst. Nam fringilla lobortis lorem quis placerat.</p>
+
+            <p>Nulla cursus lectus sit amet facilisis scelerisque. Nam elementum arcu id risus auctor, et aliquet ligula
+                semper. Aenean malesuada, massa sed egestas ultricies, urna quam fermentum ipsum, at maximus est urna a
+                tellus. Integer quis vestibulum turpis. In non dolor nec odio convallis tempor ut at ipsum. Phasellus
+                blandit felis eu mauris rhoncus egestas. Integer quis feugiat nibh, at cursus tellus. Mauris ac ornare
+                diam.
+                Aliquam convallis tincidunt nisi ac gravida. Nullam odio ipsum, blandit sed sapien tristique, facilisis
+                malesuada turpis. Phasellus volutpat a odio eu sollicitudin. Suspendisse quis sapien dignissim, aliquam
+                tellus sed, gravida est.</p>
+
+            <p>Nullam in tempus ante, ut placerat neque. Aliquam vel magna eget metus vestibulum vehicula non hendrerit
+                nisl. Suspendisse accumsan odio a enim commodo semper. Praesent congue lorem et sagittis consequat.
+                Proin
+                ornare ipsum metus, eleifend porttitor tellus molestie in. Phasellus congue tellus ut magna condimentum,
+                eu
+                egestas ex vehicula. Nullam viverra nisi a consequat faucibus. Duis vulputate libero lectus, auctor
+                tempus
+                leo convallis vitae. Mauris mauris lectus, condimentum ac imperdiet tristique, hendrerit eget neque.
+                Duis in
+                lacinia tellus. Vivamus porttitor vulputate sapien. Aenean at magna eget ipsum semper vulputate at ut
+                dui.
+                Maecenas leo nibh, congue non quam ac, porta consectetur felis. Duis nibh ligula, ultrices eget luctus
+                eget,
+                pharetra quis turpis. Vestibulum maximus nunc sit amet augue sagittis, id hendrerit libero pulvinar.</p>
+
+            <p>Vestibulum nec magna ac orci suscipit pharetra et sed risus. Aliquam lectus ligula, laoreet in sagittis
+                at,
+                vehicula id sapien. Etiam ut urna non nibh aliquam iaculis. Pellentesque viverra magna id dapibus
+                fermentum.
+                Maecenas quis eros imperdiet, elementum est quis, egestas erat. Nunc interdum, velit sed mattis iaculis,
+                arcu ex auctor leo, et viverra nisl leo non dui. Nulla erat arcu, commodo ut sapien et, laoreet
+                vulputate
+                massa. Nulla facilisi. In hac habitasse platea dictumst. Vestibulum mattis tempus pretium.</p>
+
+            <p>Phasellus vehicula congue dui, eget rhoncus augue luctus a. Praesent tempus orci elit, eu facilisis diam
+                hendrerit quis. Pellentesque hendrerit sollicitudin urna, a efficitur elit efficitur sit amet. Morbi
+                porta
+                risus diam, tincidunt commodo urna scelerisque vel. Integer tincidunt libero vel nulla auctor, nec
+                rhoncus
+                nisi egestas. Aliquam dignissim nunc vel rutrum venenatis. Cras ac ultrices est, ac porta ante.
+                Pellentesque
+                metus sapien, aliquet egestas volutpat vitae, auctor vitae ex. Ut id nunc a neque eleifend commodo vitae
+                sit
+                amet felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Curabitur eleifend suscipit vehicula.
+            </p>
+            <ul>
+                <li><a href="index.html">Ir a inicio</a></li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        window.setInterval(() => console.log("main"), 1);
+
+        window.addEventListener("load", function () {
+            const p = document.createElement("p");
+            time = document.createTextNode(`window.load! Time: ${(new Date()).toLocaleString()}`);
+            p.append(time);
+
+            const article = document.getElementsByTagName("main")[0];
+            article.appendChild(p);
+
+            console.log("window loaded!");
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const p = document.createElement("p");
+            time = document.createTextNode(`DOMContentLoaded! Time: ${(new Date()).toLocaleString()}`);
+            p.append(time);
+
+            const article = document.getElementsByTagName("main")[0];
+            article.appendChild(p);
+
+            console.log("DOM Content Loaded!");
+        });
+    </script>
+</body>
+
+</html>
