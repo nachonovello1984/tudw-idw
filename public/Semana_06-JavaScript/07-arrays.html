@@ -141,7 +141,6 @@
 
                     let arrayReverse = [1, 2, 3, 4];
                     document.write(`arrayReverse: ${arrayReverse.toString()}<br/>`);
-                    document.write(`arrayReverse.reverse(): " + arrayRevers${verse().toString()}<br/>`);
 
                     let arraySort = [4, 3, 2, 1];
                     document.write(`arraySort: ${arraySort.toString()}<br/>`);
@@ -160,7 +159,7 @@
                         }
                     });
 
-                    document.write(`arraySort.sort(): ${arraySorrt().toString()} <br/>`);
+                    document.write(`arraySort.sort(): ${arraySort.toString()} <br/>`);
                 }
 
                 function testDesestructuracion() {
@@ -174,6 +173,12 @@
                     document.write(`resto: ${resto}<br/>`);
 
                 }
+
+                const league = ["Liverpool", "Man City", "Arsenal", "Chelsea"];
+                let [first, ...everyoneElse] = league;
+                console.log(`first: ${first}`);
+                console.log(`los del medio: ${everyoneElse}`);
+                console.log(`last: ${everyoneElse[everyoneElse.length - 1]}`);
             </script>
             <ul>
                 <li><a href="index.html">Ir a inicio de JavaScript</a></li>
