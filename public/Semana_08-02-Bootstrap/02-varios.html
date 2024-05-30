@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Varios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="img-container col-md-auto">
+                    <img src="img/logo-fcad.png" class="logo" alt="Logo UNER-FCAD"
+                        title="Facultad de Ciencias de la Administración" />
+                </div>
+                <h1 class="col-xs-12 col-md-6 text-center">
+                    Varios
+                </h1>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="01-grid-system.html" class="nav-link">Grid System</a></li>
+                <li><a href="02-varios.html" class="nav-link active">Varios</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row align-items-center">
+                <article class="col">
+                    <h2>Alertas</h2>
+                    <div class="alert alert-primary" role="alert">
+                        This is a primary alert—check it out!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        This is a secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        This is a success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        This is a warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        This is a info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        This is a light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        This is a dark alert—check it out!
+                    </div>
+
+                    <h2>Buttons</h2>
+
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+
+                    <button type="button" class="btn btn-link">Link</button>
+                    <h2>Formularios</h2>
+                    <form class="p-2">
+                        <div class="row">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="row">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="row">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Check me out
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                    <h2>Modal</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Abrir Modal
+                      </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Encabezado de popup</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Este es un popup modal!.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const myModal = document.getElementById('myModal');
+        const myBtn = document.getElementById('abrirPopup');
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Escalado de Imágenes - TUDW | FCAD | UNER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="../common/img/fcad-uner-70.png" class="logo" alt="Logo UNER-FCAD"
+                title="Facultad de Ciencias de la Administración" />
+            <h1>Escalado de Imágenes</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="01-viewports.html">Viewports</a></li>
+            <li><a href="02-media-queries.html">Media Queries</a></li>
+            <li><a href="03-imagenes.html">Escalado de Imágenes</a></li>
+            <li><a href="04-fuentes.html">Fuentes</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <article>
+            <section>
+                <p class="msj info">
+                    Redimensionar la ventana del navegador para ver como cambian las imágenes. 
+                </p>
+
+                <picture>
+                    <source media="(min-width: 400px) and (max-width: 700px)" srcset="https://placehold.co/400"/>
+                    <source media="(min-width: 701px) and (max-width: 1000px)" srcset="https://placehold.co/700"/>
+                    <source media="(min-width: 1001px)" srcset="https://placehold.co/1000"/>
+
+                    <img alt="Texto alternativo" src="https://placehold.co/200"/>
+
+                </picture>   
+            </section>
+        </article>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+.bg-body-primary {
+    background-color: #007CC3;
+}
+
+div.container div.img-container img {
+    display: inline-block;
+    text-align: center;
+}
+
+nav.bg-body-primary a.nav-link,
+nav.bg-body-primary .nav-link.active {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav.bg-body-primary .nav-link.active {
+    background-color: #015c91;
+    border-radius: 6px;
+}
+
+h1 {
+    display: block !important;
+    padding: 1.6rem 0;
+    color: #0068A5;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: calc(1.5em + 1vw);
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding: 10px;
+    color: #0068A5;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 24px;
+}
+
+h3 {
+    margin: 30px 0px;
+    color: #0068A5;
+    font-family: Verdana, Arial, sans-serif;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 20px;
+
+    color: #666;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    text-decoration: none;
+
+    line-height: 1.5;
+}
+
+main {
+    background-color: rgb(201, 239, 251);
+}
+
+article {
+    background-color: white;
+    min-height: 800px;
+}
+
+article ul li a,
+article ul li a:visited {
+    color: black;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    text-decoration: none;
+
+    line-height: 1.5;
+}
+
+article ul li a:hover {
+    cursor: pointer;
+}
+
+article ul {
+    margin-bottom: 20px;
+
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+article ul li a:active,
+article ul li a:hover {
+    color: #0068A5;
+    text-decoration: underline;
+}
+
+.resultados {
+    margin-bottom: 10px;
+
+    color: black;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+code {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.25
+}
+
+main.grid-system div[class^="col"] {
+    padding: 1rem;
+
+    color: white;
+
+    text-align: center;
+}
+
+main.grid-system div[class^="col"]:first-child {
+    background-color: tomato
+}
+
+main.grid-system div[class^="col"]:nth-child(2) {
+    background-color: teal
+}
+
+main.grid-system div[class^="col"]:nth-child(3) {
+    background-color: orange
+}
+
+main.grid-system div[class^="col"]:nth-child(4) {
+    color: black;
+    background-color: yellow
+}
+
+main.grid-system div[class^="col"]:nth-child(5) {
+    background-color: lightsalmon
+}
+
+main.grid-system div[class^="col"]:nth-child(6) {
+    background-color: pink
+}
+
+main.grid-system div[class^="col"]:nth-child(7) {
+    background-color: crimson
+}
+
+main.grid-system div[class^="col"]:nth-child(8) {
+    background-color: turquoise
+}
