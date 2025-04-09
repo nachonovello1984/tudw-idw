@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CSS - Variables</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="screen">
+        :root {
+            --color-principal: #530C9B;
+            --color-secundario: #b730c3;
+
+            --font-principal: Arial, Helvetica, sans-serif;
+            --font-secundario: serif;
+
+            --color-aceptar: #005c1f;
+            --color-cancelar: #870202;
+        }
+
+        h1 {
+            color: var(--color-principal);
+            font-family: var(--font-principal);
+        }
+
+        h2 {
+            color: var(--color-secundario);
+            font-family: (--font-secundario);
+        }
+
+        div{
+            margin: 2rem;
+        }
+
+        a.boton {
+            padding: 1rem 2rem;
+            color: white;
+            font-weight: bold;
+            font-family: var(--font-principal);
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        a.boton-destacado {
+            background-color: var(--color-principal);
+        }
+
+        a.boton-aceptar {
+            margin-right: 2rem;
+            background-color: var(--color-aceptar);
+        }
+
+        a.boton-cancelar {
+            background-color: var(--color-cancelar);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título 1</h1>
+
+    <h2>Título 2</h2>
+    <div>
+        <a href="#" class="boton boton-aceptar">Aceptar</a>
+        <a href="#" class="boton boton-cancelar">   Cancelar</a>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus enim vitae turpis scelerisque, a
+        finibus diam malesuada. Integer cursus, libero at maximus pellentesque, ligula magna commodo mi, at ornare massa
+        tortor vitae elit. Cras semper, urna non convallis luctus, quam velit pulvinar libero, id bibendum lacus diam in
+        orci. Maecenas nulla mi, tempor in eros non, bibendum cursus tellus. Proin porta, dolor in ultrices molestie,
+        nibh mi sollicitudin orci, pulvinar venenatis sem velit a mi. Morbi tincidunt elementum ultricies. Donec sem
+        elit, porttitor at dui id, dignissim sollicitudin est. Ut dictum, dolor vel interdum rutrum, ipsum quam feugiat
+        lectus, et aliquam quam libero in augue. Nam congue consequat elit vel commodo. Vivamus egestas vel arcu sit
+        amet lobortis
+    </p>
+
+    <ul>
+        <li><a href="index.html">Volver al inicio.</a></li>
+    </ul>
+</body>
+
+</html>
