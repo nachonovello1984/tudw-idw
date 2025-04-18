@@ -63,7 +63,7 @@ nav li:hover {
     background-color: #0068A5;
 }
 
-div.main-container{
+main {
     display: grid;
     grid-template-columns: 1fr [col-center] 3fr [col-right] 1fr;
 
