@@ -31,7 +31,7 @@ header div.container h1 {
 
     min-width: 50%;
 
-    color: #0068A5;
+    color: white;
     font-family: Verdana, Arial, sans-serif;
     font-size: 30px;
     letter-spacing: 2px;
@@ -86,6 +86,16 @@ nav li a:hover {
     font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+
+    nav li a,
+    nav li a:active,
+    nav li a:visited,
+    nav li a:hover {
+        font-size: 1rem;
+    }
 }
 
 nav li:hover {
