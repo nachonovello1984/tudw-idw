@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Vínculo incorporado</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <script>
+        varGlobal = "Esto es una variable global";
+        document.write(varGlobal);
+        document.write("<br/>");
+
+        var varConVar = "Esto es una variable definida con var";
+        document.write(varConVar);
+        document.write("<br/>");
+
+        let varConLet = "Esto es una variable definida con let";
+        document.write(varConLet);
+        document.write("<br/>");
+
+        const defConstante = "Esto es una constante definida con const";
+        document.write(defConstante);
+        document.write("<br/>");
+
+        varConLet = "prueba";
+        document.write(varConLet);
+    </script>
+</body>
+
+</html>

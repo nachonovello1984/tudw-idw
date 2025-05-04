@@ -36,14 +36,16 @@
                     document.write('<h2>Creación de Arrays</h2>');
 
                     let miArray1 = [1, 2, 3];
+                    console.log(miArray1);
                     document.write(`miArray1: ${miArray1.toString()} <br/>`);
 
                     let miArray2 = new Array(3);
+                    console.log(miArray2);
                     document.write(`miArray2: ${miArray2.toString()} <br/>`);
                     document.write(`miArray2.length: ${miArray2.length} <br/>`);
                     document.write(`miArray2[0]: ${miArray2[0]} <br/>`);
-                    document.write(`miArray2[1]: miArray2[1] <br/>`);
-                    document.write(`miArray2[2]: miArray2[2] <br/>`);
+                    document.write(`miArray2[1]: ${miArray2[1]} <br/>`);
+                    document.write(`miArray2[2]: ${miArray2[2]} <br/>`);
                 }
 
 
@@ -166,9 +168,10 @@
                     document.write('<h2>Desestructuración</h2>');
                     const array = [1, 2, 3, 4, 5, 6, 7, 8];
 
-                    const [primero, ...resto] = array;
+                    const [primero,,,,,,,ultimo] = array;
 
                     document.write(`primero: ${primero}<br/>`);
+                    document.write(`ultimo: ${ultimo}<br/>`);
 
                     document.write(`resto: ${resto}<br/>`);
 

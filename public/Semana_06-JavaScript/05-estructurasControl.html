@@ -36,6 +36,7 @@
                     document.write("<h2>Test Bucle While</h2>");
 
                     let times = 10;
+                    //times-- / times = times - 1 / times -= 1  
                     while (times--) {
                         document.write("Introducción al Desarrollo Web!!!");
                         document.write("<br/>");
@@ -114,8 +115,8 @@
                     }
 
                     document.write("<h2>Operador ternario</h2>");
-                    document.write("Test 1: " + (true) ? 'true ' : 'false ');
-                    document.write("Test 2: " + (true) ? 5 : 6);
+                    document.write("Test 1: " + ((true) ? 'true ' : 'false '));
+                    document.write("Test 2: " + (false? 5 : 6));
                 }
 
                 function controlarYDividir(param1, param2) {
