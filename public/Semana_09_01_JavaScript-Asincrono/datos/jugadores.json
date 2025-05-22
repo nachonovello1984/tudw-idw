@@ -1,0 +1,116 @@
+[
+    {
+        "dorsal": 1,
+        "nacionalidad": "POR",
+        "nombre": "Ederson",
+        "edad": 29
+    },
+    {
+        "dorsal": 5,
+        "nacionalidad": "DEF",
+        "nombre": "John Stones",
+        "edad": 28
+    },
+    {
+        "dorsal": 3,
+        "nacionalidad": "DEF",
+        "nombre": "Rúben Dias",
+        "edad": 29
+    },
+    {
+        "dorsal": 5,
+        "nacionalidad": "DEF",
+        "nombre": "Aymeric Laporte",
+        "edad": 28
+    },
+    {
+        "dorsal": 6,
+        "nacionalidad": "DEF",
+        "nombre": "Nathan Aké",
+        "edad": 28
+    },
+    {
+        "dorsal": 16,
+        "nacionalidad": "MED",
+        "nombre": "Rodri",
+        "edad": 26
+    },
+    {
+        "dorsal": 8,
+        "nacionalidad": "MED",
+        "nombre": "İlkay Gündoğan",
+        "edad": 32
+    },
+    {
+        "dorsal": 17,
+        "nacionalidad": "MED",
+        "nombre": "Kevin De Bruyne",
+        "edad": 31
+    },
+    {
+        "dorsal": 9,
+        "nacionalidad": "DEL",
+        "nombre": "Erling Haaland",
+        "edad": 22
+    },
+    {
+        "dorsal": 18,
+        "nacionalidad": "DEL",
+        "nombre": "Julián Álvarez",
+        "edad": 23
+    },
+    {
+        "dorsal": 2,
+        "nacionalidad": "DEF",
+        "nombre": "Kyle Walker",
+        "edad": 32
+    },
+    {
+        "dorsal": 4,
+        "nacionalidad": "DEF",
+        "nombre": "Kalvin Phillips",
+        "edad": 27
+    },
+    {
+        "dorsal": 10,
+        "nacionalidad": "DEL",
+        "nombre": "Jack Grealish",
+        "edad": 27
+    },
+    {
+        "dorsal": 18,
+        "nacionalidad": "POR",
+        "nombre": "Stefan Ortega",
+        "edad": 30
+    },
+    {
+        "dorsal": 20,
+        "nacionalidad": "MED",
+        "nombre": "Bernardo Silva",
+        "edad": 30
+    },
+    {
+        "dorsal": 21,
+        "nacionalidad": "DEF",
+        "nombre": "Sergio Gómez",
+        "edad": 22
+    },
+    {
+        "dorsal": 25,
+        "nacionalidad": "DEF",
+        "nombre": "Manuel Akanji",
+        "edad": 27
+    },
+    {
+        "dorsal": 26,
+        "nacionalidad": "DEL",
+        "nombre": "Riyad Mahrez",
+        "edad": 32
+    },
+    {
+        "dorsal": 32,
+        "nacionalidad": "MED",
+        "nombre": "Máximo Perrone",
+        "edad": 20
+    }
+]
