@@ -28,13 +28,13 @@
         </div>
     </main>
     <script type="text/javascript">
-        var params = {};
+        const params = {};
 
         if (location.search) {
-            var parts = location.search.substring(1).split('&');
+            const parts = location.search.substring(1).split('&');
 
-            for (var i = 0; i < parts.length; i++) {
-                var nv = parts[i].split('=');
+            for (let i = 0; i < parts.length; i++) {
+                const nv = parts[i].split('=');
                 if (!nv[0]) {
                     continue;
                 }

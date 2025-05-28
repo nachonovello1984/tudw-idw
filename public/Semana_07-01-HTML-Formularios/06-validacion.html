@@ -24,8 +24,10 @@
                     <legend>Datos de identificación</legend>
                     <div class="fila">
                         <label id="lblApellido" for="txtApellido">Apellido</label>
-                        <input id="txtApellido" class="validable" name="apellido" type="text" size="50" maxlength="50"
-                            placeholder="Escriba aquí su/s apellido/s" required />
+                        <input id="txtApellido" class="validable" 
+                            name="apellido" type="text" size="50" maxlength="50"
+                            placeholder="Escriba aquí su/s apellido/s" 
+                            required />
                     </div>
                     <div class="fila">
                         <label id="lblNombre" for="txtNombre">Nombre</label>
@@ -35,12 +37,13 @@
                     <div class="fila">
                         <label id="lblCuit" for="txtCuit">CUIT</label>
                         <input id="txtCuit" class="validable" name="cuit" type="text" size="50"
-                            placeholder="Escriba aquí su/s CUIT" required pattern="[0-9]{2}-[0-9]{8}-[0-9]{1}" />
+                            placeholder="Escriba aquí su/s CUIT" required 
+                            pattern="[0-9]{2}-[0-9]{8}-[0-9]{1}" />
                     </div>
                     <div class="fila">
                         <label id="lblFacultad" for="txtFacultad">Facultad</label>
                         <input id="txtFacultad" name="facultad" type="text" size="50"
-                            placeholder="Escriba aquí la Facultad donde estudia." required maxlength="5"
+                            placeholder="Escriba aquí la Facultad donde estudia." required maxlength="50"
                             oninvalid="alert('Debe especificar un valor para el campo Facultad.');" />
                     </div>
                 </fieldset>

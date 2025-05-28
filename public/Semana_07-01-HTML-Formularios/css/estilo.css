@@ -3,6 +3,8 @@ form fieldset{
     
     width: 640px;
     height: auto;
+
+    background-color: rgb(247, 247, 247);
     
     border: 1px solid #CCC;
     border-radius: 3px;
